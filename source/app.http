@@ -1,0 +1,81 @@
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username":"nguyentrungkien",
+    "password":"kien12345"
+}
+
+### 
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username":"nguyentrungkien",
+    "password":"kien12345"
+}
+
+###
+POST http://localhost:5000/admin/createpost
+Content-Type: application/json
+
+{
+    "title":"Các thành viên trong nhóm Blackpin đã đến Việt Nam",
+    "des":"Dự kiến các thành viên của nhóm Blackpin sẽ đến Việt Nam sớm nhất",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/1/18/20240809_Blackpink_Pink_Carpet_09.png",
+    "tag":"cutdown",
+    "code":"ioNng23DkIM",
+    "link":"https://vi.wikipedia.org/wiki/Blackpink"
+}
+
+###
+GET http://localhost:5000/admin/getallpost
+
+###
+POST http://localhost:5000/admin/updatepost/ccf323d6-e5d9-49f5-85cd-f67ce30e5397
+Content-Type: application/json
+
+{
+    "title":"Các thành viên trong nhóm Blackpin đã đến Việt Nam ngay hon nay",
+    "des":"Dự kiến các thành viên của nhóm Blackpin sẽ đến Việt Nam sớm nhất",
+    "image":"https://upload.wikimedia.org/wikipedia/commons/1/18/20240809_Blackpink_Pink_Carpet_09.png",
+    "tag":"cutdown",
+    "code":"ioNng23DkIM",
+    "link":"https://vi.wikipedia.org/wiki/Blackpink"
+}
+
+
+###
+DELETE http://localhost:5000/admin/deletepost/ccf323d6-e5d9-49f5-85cd-f67ce30e5397
+
+
+###
+GET http://localhost:5000/admin/getonepost/d6187389-2d9c-414e-8a09-24ef577ab0c2
+
+
+###
+GET http://localhost:5000/admin/getallactive
+
+###
+GET http://localhost:5000/admin/countpost
+
+###
+GET http://localhost:5000/admin/countactive
+
+###
+POST http://localhost:5001/admin/createactive
+Content-Type: application/json
+
+{
+    "image":"https://static.vecteezy.com/system/resources/previews/049/110/540/non_2x/marble-counter-mockup-with-a-new-year-celebration-background-featuring-vibrant-fireworks-lighting-up-the-night-sky-editorialgraphy-empty-copy-space-on-the-right-photo.jpeg"
+}
+
+###
+DELETE http://localhost:5001/admin/deleteactive/54c22ad9-d68b-47c6-ad70-0fe1c78b6491
+
+###
+DELETE http://localhost:5001/admin/deleteallactive
+
+
+###
+GET http://localhost:5000/admin/search/test
