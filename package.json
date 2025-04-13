@@ -4,7 +4,7 @@
   "main": "source/index.js",
   "scripts": {
     "start": "source/index.js",
-    "dev": "nodemon --inspect source/index.js"
+    "dev": "node --inspect source/index.js"
   },
   "keywords": [],
   "author": "",
