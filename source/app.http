@@ -43,8 +43,6 @@ Content-Type: application/json
     "code":"ioNng23DkIM",
     "link":"https://vi.wikipedia.org/wiki/Blackpink"
 }
-
-
 ###
 DELETE http://localhost:5000/admin/deletepost/ccf323d6-e5d9-49f5-85cd-f67ce30e5397
 
@@ -63,7 +61,7 @@ GET http://localhost:5000/admin/countpost
 GET http://localhost:5000/admin/countactive
 
 ###
-POST http://localhost:5001/admin/createactive
+POST http://localhost:5000/admin/createactive
 Content-Type: application/json
 
 {
@@ -71,7 +69,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:5001/admin/deleteactive/54c22ad9-d68b-47c6-ad70-0fe1c78b6491
+DELETE http://localhost:5000/admin/deleteactive/54c22ad9-d68b-47c6-ad70-0fe1c78b6491
 
 ###
 DELETE http://localhost:5001/admin/deleteallactive
@@ -79,3 +77,4 @@ DELETE http://localhost:5001/admin/deleteallactive
 
 ###
 GET http://localhost:5000/admin/search/test
+
